@@ -1,11 +1,11 @@
-// la finalidad de este proyecto es crear un programa que pueda entretener al usuario, en la cual gradualmente se implementara nuevas opciones
+// la finalidad de este proyecto es crear un programa que pueda entretener al usuario, en la cual gradualmente se implementara nuevas opciones 
 
 function game() {
 
     var eleccion = 0;
 
     do {
-        eleccion = parseInt(prompt('Con que le gustaria entretenerse? \n 1: Palabra en reversa \n 2: Letra por letra \n 0: salir'));
+        eleccion = parseInt(prompt('Con que le gustaria entretenerse? \n 1: Palabra en reversa \n 2: Letra por letra \n 3: Cantidad de letras \n 0: salir'));
         switch (eleccion) {
             case 1:
                 var frase = prompt('ingrese una palabra y lo mostraremos de reversa');
@@ -30,10 +30,11 @@ function game() {
                         cont++;
                     }
                 }
-                alert('Lo que ingresaste:' + parrafo + ' tiene ' + cont + ' letra');
+                alert(`Lo que ingresaste:"${parrafo}" tiene ${cont} "${letra}"`);
                 break;
             case 0:
                 alert('gracias por jugar!')
+                break;
             default:
                 alert('Opcion incorrecta, elija otra cosa');
         }
