@@ -1,3 +1,5 @@
+// la finalidad de este proyecto es crear un programa que pueda entretener al usuario, en la cual gradualmente se implementara nuevas opciones
+
 function game() {
 
     var eleccion = 0;
